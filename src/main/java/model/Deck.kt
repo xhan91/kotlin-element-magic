@@ -29,7 +29,7 @@ abstract class AbstractDeck: IDeck {
 
 }
 
-class DeskDeck(): AbstractDeck() {
+class DeskDeck: AbstractDeck() {
 
     val sub1: MutableList<Card> = ArrayList()
     val sub2: MutableList<Card> = ArrayList()

@@ -7,6 +7,6 @@ import enum.SkillType
  */
 class Skill(private val value: Int,
             private val type: SkillType,
-            private val apply: (Player, Player) -> Unit) {
+            private val apply: (Player, Player, Game) -> Unit) {
 
 }

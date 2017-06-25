@@ -44,7 +44,8 @@ class DeskDeck: AbstractDeck() {
                     cards.add(Card(suit, 2))
                 }
                 else -> {
-                    (1..13).mapTo(cards) { Card(suit, it) }
+                    // only 1 to 10 used in game
+                    (1..10).mapTo(cards) { Card(suit, it) }
                 }
             }
         }
@@ -70,4 +71,8 @@ class DeskDeck: AbstractDeck() {
     override fun toString(): String {
         return cards.joinToString(separator = "\n")
     }
+}
+
+class HandDeck: AbstractDeck() {
+
 }
